@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+
+ */
+
+/*
+font-family: 'Kaushan Script', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Neucha', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+@import "bootstrap"; 
+
+.photo{
+    padding-bottom: 2em;
+    width: auto;
+    max-height: 1000px;
+
+}
+.nom{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 8em;
+    color: #bb0808;
+    margin-bottom: 0.3em;
+}
+.date{
+    font-family: 'Suranna', serif;
+    font-size: 3em;
+    margin-bottom: 2.5em;
+    font-weight: 400;
+}
+.auteur{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    margin-bottom: 0.3em;
+    font-weight: 800;
+}
+.trait{
+    height: 5px;
+    width: 200px;
+    background: #cecdcc;
+    border-radius: 800px;
+    margin: 0 auto 10em auto;
+}
+.Menu{
+    
+    background-color: #bb0808;
+  overflow: hidden;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.fade-in-element{
+    opacity: 1;
+    transition: .5s;
+}

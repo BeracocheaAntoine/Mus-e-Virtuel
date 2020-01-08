@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @oeuvre.photo %>
+</p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @oeuvre.nom %>
+</p>
+
+<p>
+  <strong>Auteur:</strong>
+  <%= @oeuvre.auteur %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @oeuvre.date %>
+</p>
+
+<%= link_to 'Edit', edit_oeuvre_path(@oeuvre) %> |
+<%= link_to 'Back', oeuvres_path %>
