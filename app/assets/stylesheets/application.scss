@@ -23,6 +23,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .photo{
     padding-bottom: 2em;
+    padding-top: 5em;
     width: auto;
     max-height: 1000px;
 
@@ -36,7 +37,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .date{
     font-family: 'Suranna', serif;
     font-size: 3em;
-    margin-bottom: 2.5em;
+    margin-bottom: 3em;
     font-weight: 400;
 }
 .auteur{
@@ -45,24 +46,60 @@ font-family: 'Roboto Condensed', sans-serif;
     margin-bottom: 0.3em;
     font-weight: 800;
 }
+
+header{
+background-color: #bb0808;
+ height: 100px;
+ width: 100%;
+ margin-bottom: 2em;
+}
+
+footer{
+    background-color: #bb0808;
+     height: 100px;
+     width: 100%;
+     margin-bottom: 2em;
+    }
+    footer em{
+        color: #FFFFFF;
+    }
+
 .trait{
-    height: 5px;
-    width: 200px;
+    height: 6px;
+    width: 100px;
     background: #cecdcc;
     border-radius: 800px;
-    margin: 0 auto 10em auto;
+    margin: 0 auto 0.3em auto;
 }
-.Menu{
+.petitrait{
+    height: 5px;
+    width: 50px;
+    background: #cecdcc;
+    border-radius: 800px;
+    margin: 0 auto 0.3em auto;
+    vertical-align: text-top;
+}
+
+.musee , .virtuel{
+    padding-top: 1em;
     
-    background-color: #bb0808;
-  overflow: hidden;
+}
+.amour{
+    font-size: 1.5em;
+    padding-left: 4em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-bottom: 2em;
+    
+}
+header em{
+    color: #FFFFFF;
 }
 
-.hidden{
-    opacity: 0;
+.musee{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3em;
 }
-
-.fade-in-element{
-    opacity: 1;
-    transition: .5s;
+.virtuel{
+font-size: 2em;
+font-family: 'EB Garamond', serif;
 }

@@ -1,7 +1,11 @@
+<header>
+<em class="musee">Musée</em>
+<em class="virtuel">   Virtuel</em>
+<div><em class="amour">De l'Amour</em></div>
+</header>
 <div class="container">
 <div class="row justify-content-center">
 
-<div class="Menu"></div>
 
 <% @oeuvres.each do |oeuvre| %>
 
@@ -11,7 +15,9 @@
 <h1 class="nom"><%= oeuvre.nom %></h1>
 <h3 class="auteur"><%= oeuvre.auteur %></h3>
 <h2  class="date"><%= oeuvre.date %></h2>
+<div class="petitrait"></div>
 <div class="trait"></div>
+<div class="petitrait"></div>
 </div>
 </div>
 
@@ -58,3 +64,9 @@
 <br>
 
 <%= link_to 'New Oeuvre', new_oeuvre_path %>
+
+<footer>
+<em class="musee">Musée</em>
+<em class="virtuel">   Virtuel</em>
+<div><em class="amour">De l'Amour</em></div>
+</footer>
