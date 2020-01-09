@@ -1,32 +1,27 @@
-<header>
 
-<nav class="navbar navbar-expand-md">
-<li class="nav-brand">
-     <a class="logo" href="#"> <%= image_tag "logo.png" %> </a> 
-    </li>
-  <ul class="navbar-nav navbar-right">
-   
-    <li class="nav-item">
-      <a class="nav-link Peinture" href="#">Peinture</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link Sculpture" href="#">Sculpture</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link Musique" href="#">Musique</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link Architecture" href="#">Architecture</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link Sculpture" href="#">Photographie</a>
-    </li>
-  </ul>
-
+<nav>
+ <ul>
+  <a class="logo" href="#"> <%= image_tag "logo.png" %> </a>
+  <li><a href="">Peinture</a></li>
+  <li><a href="news.asp">Sculpture</a></li>
+  <li><a href="contact.asp">Musique</a></li>
+  <li><a href="about.asp">Architecture</a></li>
+  <li><a href="about.asp">Photographie</a></li>
+</ul> 
 </nav>
-</header>
+
+
 <div class="container">
 <div class="row justify-content-center">
+<div class="show">
+<div class="sep"></div>
+<h1>Pourquoi l'Amour ?</h1>
+<div class="sep"></div>
+<p>Nous avons choisi le thème de l'amour<br> car il est fortement présent et domine l'art occidental. <br>Il est présent sous toutes ses formes <br>: peinture, sculpture, architecture <br>mais encore photographie ou bien musique. <br>
+<br>En vous souhaitant une agréable visite <br>du Musée de l'Amour. 
+</p>
+
+</div>
 
 
 <% @oeuvres.each do |oeuvre| %>
@@ -87,3 +82,13 @@
 
 <%= link_to 'New Oeuvre', new_oeuvre_path %>
 
+<footer>
+ <ul>
+  <a class="logo" href="#"> <%= image_tag "logo.png" %> </a>
+  <li><a href="default.asp">Peinture</a></li>
+  <li><a href="news.asp">Sculpture</a></li>
+  <li><a href="contact.asp">Musique</a></li>
+  <li><a href="about.asp">Architecture</a></li>
+  <li><a href="about.asp">Photographie</a></li>
+</ul> 
+</footer>
