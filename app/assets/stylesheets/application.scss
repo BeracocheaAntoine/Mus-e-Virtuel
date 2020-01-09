@@ -88,7 +88,7 @@ footer{
     font-size: 1.5em;
     padding-left: 4em;
     font-family: 'Roboto Condensed', sans-serif;
-    padding-bottom: 2em;
+    padding-bottom: em;
     
 }
 header em{
@@ -102,4 +102,26 @@ header em{
 .virtuel{
 font-size: 2em;
 font-family: 'EB Garamond', serif;
+}
+.amour{
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.amour:hover {
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
 }
