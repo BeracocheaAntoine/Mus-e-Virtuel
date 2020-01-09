@@ -48,21 +48,11 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 header{
-background-color: #bb0808;
+background-color:#9D0B0E;
  height: 100px;
  width: 100%;
  margin-bottom: 2em;
 }
-
-footer{
-    background-color: #bb0808;
-     height: 100px;
-     width: 100%;
-     margin-bottom: 2em;
-    }
-    footer em{
-        color: #FFFFFF;
-    }
 
 .trait{
     height: 6px;
@@ -80,48 +70,17 @@ footer{
     vertical-align: text-top;
 }
 
-.musee , .virtuel{
-    padding-top: 1em;
-    
-}
-.amour{
-    font-size: 1.5em;
-    padding-left: 4em;
-    font-family: 'Roboto Condensed', sans-serif;
-    padding-bottom: em;
-    
-}
 header em{
     color: #FFFFFF;
 }
+.logo { 
+    height: 50px;
+}
 
-.musee{
-  font-family: 'Kaushan Script', cursive;
-  font-size: 3em;
-}
-.virtuel{
-font-size: 2em;
-font-family: 'EB Garamond', serif;
-}
-.amour{
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1); 
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1); 
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 200ms ease-in;
-    transform: scale(1);   
-
-}
-.amour:hover {
-    z-index: 2;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.5);   
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    transition: all 200ms ease-in;
-    transform: scale(1.5);
+header li {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    float: right !important;
+    margin-right: -15px;
 }
