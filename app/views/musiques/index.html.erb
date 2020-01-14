@@ -17,7 +17,7 @@
 <div class="sep"></div>
 <h1>Pourquoi l' Amour ?</h1>
 <div class="sep"></div>
-<p>Nous avons choisi le thème de l'amour<br> car il est fortement présent et domine l'art occidental. <br>Il est présent sous toutes ses formes <br>: peinture, sculpture, architecture <br>mais encore photographie ou bien musique. <br>
+<p>Nous avons choisi le thème de l'amour<br> car il est fortement présent et domine l'art occidental. <br>Il est présent sous toutes ses formes <br>: peinture, sculpture, musique <br>mais encore photographie ou bien musique. <br>
 <br>En vous souhaitant une agréable visite <br>du Musée de l'Amour. 
 </p>
 
@@ -26,14 +26,14 @@
 </div>
 
 
-<% @oeuvres.each do |oeuvre| %>
+<% @musiques.each do |musique| %>
 
 
 <div class="col-lg-12 text-center" >
-<img class="photo"src="<%= oeuvre.photo %>">
-<h1 class="nom"><%= oeuvre.nom %></h1>
-<h3 class="auteur"><%= oeuvre.auteur %></h3>
-<h2  class="date"><%= oeuvre.date %></h2>
+<img class="photo"src="<%= musique.photo %>">
+<h1 class="nom"><%= musique.nom %></h1>
+<h3 class="auteur"><%= musique.auteur %></h3>
+<h2  class="date"><%= musique.date %></h2>
 <div class="petitrait"></div>
 <div class="trait"></div>
 <div class="petitrait"></div>
@@ -52,7 +52,7 @@
 
 <p id="notice"><%= notice %></p>
 
-<h1>Oeuvres</h1>
+<h1>musiques</h1>
 
 <table>
   <thead>
@@ -66,15 +66,15 @@
   </thead>
 
   <tbody>
-    <% @oeuvres.each do |oeuvre| %>
+    <% @musiques.each do |musique| %>
       <tr>
-        <td><%= oeuvre.photo %></td>
-        <td><%= oeuvre.nom %></td>
-        <td><%= oeuvre.auteur %></td>
-        <td>"><%= oeuvre.date %></td>
-        <td><%= link_to 'Show', oeuvre %></td>
-        <td><%= link_to 'Edit', edit_oeuvre_path(oeuvre) %></td>
-        <td><%= link_to 'Destroy', oeuvre, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= musique.photo %></td>
+        <td><%= musique.nom %></td>
+        <td><%= musique.auteur %></td>
+        <td>"><%= musique.date %></td>
+        <td><%= link_to 'Show', musique %></td>
+        <td><%= link_to 'Edit', edit_musique_path(musique) %></td>
+        <td><%= link_to 'Destroy', musique, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -82,7 +82,7 @@
 
 <br>
 
-<%= link_to 'New Oeuvre', new_oeuvre_path %>
+<%= link_to 'New musique', new_musique_path %>
 
 <footer>
  <ul>
@@ -92,7 +92,9 @@
   <li><a href="/musiques">Musique</a></li>
   <li><a href="/architectures">Architecture</a></li>
   <li><a href="/oeuvres">Photographie</a></li>
-  
+
+ 
   </ul>
   <a class="moi row justify-content-center" href="https://antoineberacochea.fr">Antoine Beracochea</a>
 </footer>
+

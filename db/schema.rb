@@ -10,12 +10,48 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_07_212302) do
+ActiveRecord::Schema.define(version: 2020_01_10_081919) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "architectures", force: :cascade do |t|
+    t.string "photo"
+    t.string "nom"
+    t.string "auteur"
+    t.string "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "musiques", force: :cascade do |t|
+    t.string "photo"
+    t.string "nom"
+    t.string "auteur"
+    t.string "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "oeuvres", force: :cascade do |t|
+    t.string "photo"
+    t.string "nom"
+    t.string "auteur"
+    t.string "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "peintures", force: :cascade do |t|
+    t.string "photo"
+    t.string "nom"
+    t.string "auteur"
+    t.string "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sculptures", force: :cascade do |t|
     t.string "photo"
     t.string "nom"
     t.string "auteur"

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @architecture.photo %>
+</p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @architecture.nom %>
+</p>
+
+<p>
+  <strong>Auteur:</strong>
+  <%= @architecture.auteur %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @architecture.date %>
+</p>
+
+<%= link_to 'Edit', edit_architecture_path(@architecture) %> |
+<%= link_to 'Back', architectures_path %>

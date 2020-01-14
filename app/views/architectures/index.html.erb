@@ -26,14 +26,14 @@
 </div>
 
 
-<% @oeuvres.each do |oeuvre| %>
+<% @architectures.each do |architecture| %>
 
 
 <div class="col-lg-12 text-center" >
-<img class="photo"src="<%= oeuvre.photo %>">
-<h1 class="nom"><%= oeuvre.nom %></h1>
-<h3 class="auteur"><%= oeuvre.auteur %></h3>
-<h2  class="date"><%= oeuvre.date %></h2>
+<img class="photo"src="<%= architecture.photo %>">
+<h1 class="nom"><%= architecture.nom %></h1>
+<h3 class="auteur"><%= architecture.auteur %></h3>
+<h2  class="date"><%= architecture.date %></h2>
 <div class="petitrait"></div>
 <div class="trait"></div>
 <div class="petitrait"></div>
@@ -52,7 +52,7 @@
 
 <p id="notice"><%= notice %></p>
 
-<h1>Oeuvres</h1>
+<h1>architectures</h1>
 
 <table>
   <thead>
@@ -66,15 +66,15 @@
   </thead>
 
   <tbody>
-    <% @oeuvres.each do |oeuvre| %>
+    <% @architectures.each do |architecture| %>
       <tr>
-        <td><%= oeuvre.photo %></td>
-        <td><%= oeuvre.nom %></td>
-        <td><%= oeuvre.auteur %></td>
-        <td>"><%= oeuvre.date %></td>
-        <td><%= link_to 'Show', oeuvre %></td>
-        <td><%= link_to 'Edit', edit_oeuvre_path(oeuvre) %></td>
-        <td><%= link_to 'Destroy', oeuvre, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= architecture.photo %></td>
+        <td><%= architecture.nom %></td>
+        <td><%= architecture.auteur %></td>
+        <td>"><%= architecture.date %></td>
+        <td><%= link_to 'Show', architecture %></td>
+        <td><%= link_to 'Edit', edit_architecture_path(architecture) %></td>
+        <td><%= link_to 'Destroy', architecture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -82,7 +82,7 @@
 
 <br>
 
-<%= link_to 'New Oeuvre', new_oeuvre_path %>
+<%= link_to 'New architecture', new_architecture_path %>
 
 <footer>
  <ul>
@@ -93,6 +93,7 @@
   <li><a href="/architectures">Architecture</a></li>
   <li><a href="/oeuvres">Photographie</a></li>
   
+ 
   </ul>
   <a class="moi row justify-content-center" href="https://antoineberacochea.fr">Antoine Beracochea</a>
 </footer>
