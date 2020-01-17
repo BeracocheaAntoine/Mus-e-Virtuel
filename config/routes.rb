@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :musiques
   resources :architectures
   resources :oeuvres
-  root to: "arts#index"
+  root to: "oeuvres#index"
   
  
 end
